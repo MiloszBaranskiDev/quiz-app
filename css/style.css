@@ -1,0 +1,453 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+  background: #4ECDC4;
+  background: -webkit-gradient(linear, left top, right top, from(#546d6d), to(#4ECDC4));
+  background: linear-gradient(to right, #546d6d, #4ECDC4);
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.selected {
+  -webkit-box-shadow: 0 0 10px #555;
+          box-shadow: 0 0 10px #555;
+}
+
+.correct {
+  color: #28bd41;
+}
+
+.incorrect {
+  color: #cf2828;
+}
+
+.app {
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  height: 450px;
+  background-color: #f1f1f1;
+  border-radius: 14px;
+  -webkit-box-shadow: 0 0 10px #555;
+          box-shadow: 0 0 10px #555;
+}
+
+.app header {
+  background: #4ECDC4;
+  background: -webkit-gradient(linear, right top, left top, from(#7ea1a1), to(#4ECDC4));
+  background: linear-gradient(to left, #7ea1a1, #4ECDC4);
+  color: white;
+  border-radius: 14px;
+  padding: 10px;
+  margin-bottom: 35px;
+  text-shadow: 0 0 4px #666;
+}
+
+.app header h1 {
+  font-size: 1.15rem;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.app header p.description {
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.app .start-box button {
+  display: block;
+  margin: 0 auto;
+  background-color: transparent;
+  border: 2px solid #4ECDC4;
+  text-transform: uppercase;
+  color: #4ECDC4;
+  font-size: 0.7rem;
+  padding: 6px 8px;
+  border-radius: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  -webkit-transition: color .3s, background-color .3s;
+  transition: color .3s, background-color .3s;
+  cursor: pointer;
+}
+
+.app .start-box button:hover {
+  background-color: #4ECDC4;
+  color: white;
+}
+
+.app .start-box .info {
+  margin-bottom: 30px;
+}
+
+.app .start-box .info p {
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin-left: 6px;
+  padding: 6px;
+}
+
+.app .start-box .info i {
+  color: #4ECDC4;
+}
+
+.app .start-box form {
+  text-align: center;
+  margin: 20px 0 40px 0;
+}
+
+.app .start-box form input {
+  color: #555;
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px #e0e0e0;
+          box-shadow: 0 0 10px #e0e0e0;
+  background-color: #fff;
+  padding: 8px 8px;
+  width: 60%;
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: -webkit-box-shadow .3s;
+  transition: box-shadow .3s;
+  transition: box-shadow .3s, -webkit-box-shadow .3s;
+}
+
+.app .start-box form input:focus {
+  -webkit-box-shadow: 0 0 10px silver;
+          box-shadow: 0 0 10px silver;
+}
+
+.app .quiz-box .quiz {
+  padding: 20px;
+}
+
+.app .quiz-box .quiz .question span {
+  color: #4ECDC4;
+}
+
+.app .quiz-box .quiz .question h2 {
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.app .quiz-box .quiz .answers {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app .quiz-box .quiz .answers .answer {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 6px;
+  width: 80px;
+  height: 80px;
+  color: white;
+  text-shadow: 0 0 5px #333;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+}
+
+.app .quiz-box .quiz .answers .answer span {
+  font-size: 0.6rem;
+}
+
+.app .quiz-box .quiz .answers .answer-first {
+  background-color: #f33c3c;
+}
+
+.app .quiz-box .quiz .answers .answer-first:hover {
+  background-color: #e73c3c;
+}
+
+.app .quiz-box .quiz .answers .answer-second {
+  background-color: #4254fd;
+}
+
+.app .quiz-box .quiz .answers .answer-second:hover {
+  background-color: #3c4bd3;
+}
+
+.app .quiz-box .quiz .answers .answer-third {
+  background-color: #f8bd4e;
+}
+
+.app .quiz-box .quiz .answers .answer-third:hover {
+  background-color: #eeb64d;
+}
+
+.app .quiz-box .quiz .answers .answer-fourth {
+  background-color: #4ae4ff;
+}
+
+.app .quiz-box .quiz .answers .answer-fourth:hover {
+  background-color: #47d6f0;
+}
+
+.app .quiz-box .quiz .button-box {
+  margin-top: 30px;
+}
+
+.app .quiz-box .quiz .button-box button {
+  display: block;
+  margin: 0 auto;
+  background-color: transparent;
+  border: 2px solid #4ECDC4;
+  text-transform: uppercase;
+  color: #4ECDC4;
+  font-size: 0.7rem;
+  padding: 6px 8px;
+  border-radius: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  -webkit-transition: color .3s, background-color .3s;
+  transition: color .3s, background-color .3s;
+  cursor: pointer;
+}
+
+.app .quiz-box .quiz .button-box button:hover {
+  background-color: #4ECDC4;
+  color: white;
+}
+
+.app .result-box .result {
+  padding: 10px;
+}
+
+.app .result-box .result .info {
+  margin-bottom: 20px;
+  background: #4ECDC4;
+  background: -webkit-gradient(linear, right top, left top, from(#7ea1a1), to(#4ECDC4));
+  background: linear-gradient(to left, #7ea1a1, #4ECDC4);
+  color: white;
+  border-radius: 14px;
+  padding: 10px;
+  text-shadow: 0 0 4px #666;
+}
+
+.app .result-box .result .info p {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.app .result-box .result .show-answers p {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.app .result-box .result .show-answers span {
+  margin-bottom: 5px;
+  display: block;
+}
+
+@media (min-width: 500px) {
+  .app {
+    width: 350px;
+    height: 500px;
+  }
+  .app header h1 {
+    font-size: 1.25rem;
+  }
+  .app header p.description {
+    text-align: center;
+    font-size: 0.75rem;
+  }
+  .app .start-box .info p {
+    margin-left: 15px;
+    font-size: 0.85rem;
+  }
+  .app .quiz-box .quiz .question h2 {
+    font-size: 0.75rem;
+  }
+  .app .quiz-box .quiz .answers {
+    margin-top: 40px;
+  }
+  .app .quiz-box .quiz .answers .answer {
+    margin: 8px;
+    width: 90px;
+    height: 90px;
+  }
+  .app .quiz-box .quiz .answers .answer span {
+    font-size: 0.7rem;
+  }
+  .app .quiz-box .quiz .button-box {
+    margin-top: 40px;
+  }
+  .app .result-box .result {
+    padding: 10px;
+  }
+  .app .result-box .result .info {
+    margin-bottom: 35px;
+  }
+  .app .result-box .result .info p {
+    font-size: 1.05rem;
+  }
+  .app .result-box .result .show-answers {
+    margin-left: 10px;
+  }
+  .app .result-box .result .show-answers p {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+  }
+  .app .result-box .result .show-answers span {
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+  }
+}
+
+@media (min-width: 800px) {
+  .app {
+    width: 400px;
+    height: 550px;
+  }
+  .app header {
+    margin-bottom: 60px;
+  }
+  .app header h1 {
+    font-size: 1.35rem;
+  }
+  .app header p.description {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .app .start-box .info p {
+    margin-left: 20px;
+    font-size: 0.95rem;
+  }
+  .app .start-box button {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+  }
+  .app .quiz-box .quiz .question h2 {
+    font-size: 0.85rem;
+  }
+  .app .quiz-box .quiz .answers {
+    margin-top: 60px;
+  }
+  .app .quiz-box .quiz .answers .answer {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+  }
+  .app .quiz-box .quiz .answers .answer span {
+    font-size: 0.75rem;
+  }
+  .app .quiz-box .quiz .button-box {
+    margin-top: 50px;
+  }
+  .app .result-box .result {
+    padding: 10px;
+  }
+  .app .result-box .result .info {
+    margin-bottom: 45px;
+  }
+  .app .result-box .result .info p {
+    font-size: 1.1rem;
+  }
+  .app .result-box .result .show-answers {
+    margin-left: 15px;
+  }
+  .app .result-box .result .show-answers p {
+    font-size: 1.2rem;
+    margin-bottom: 7px;
+  }
+  .app .result-box .result .show-answers span {
+    font-size: 1.1rem;
+    margin-bottom: 7px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .app {
+    width: 500px;
+    height: 600px;
+  }
+  .app .start-box .info p {
+    letter-spacing: 1px;
+    margin-left: 25px;
+    font-size: 1.05rem;
+  }
+  .app .start-box button {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+  .app .quiz-box .quiz .question h2 {
+    font-size: 0.95rem;
+  }
+  .app .quiz-box .quiz .answers {
+    margin-top: 70px;
+  }
+  .app .quiz-box .quiz .answers .answer {
+    margin: 12px;
+    width: 125px;
+    height: 125px;
+  }
+  .app .quiz-box .quiz .answers .answer span {
+    font-size: 0.85rem;
+  }
+  .app .quiz-box .quiz .button-box {
+    margin-top: 60px;
+  }
+  .app .quiz-box .quiz .button-box button {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+  .app .result-box .result {
+    padding: 10px;
+  }
+  .app .result-box .result p {
+    margin: 20px 0;
+  }
+  .app .result-box .result .info {
+    margin-bottom: 55px;
+  }
+  .app .result-box .result .info p {
+    font-size: 1.2rem;
+  }
+  .app .result-box .result .show-answers {
+    margin-left: 25px;
+  }
+  .app .result-box .result .show-answers p {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  .app .result-box .result .show-answers span {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
