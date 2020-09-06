@@ -8,14 +8,15 @@
     outline: none !important;
 }
 
+
 $main-color: #4ECDC4;
 
 body {
     font-family: 'Raleway', sans-serif;
     color: #333;
-    background: #4ECDC4;
-    background: -webkit-linear-gradient(to right, #546d6d, #4ECDC4);
-    background: linear-gradient(to right, #546d6d, #4ECDC4);
+    background: $main-color;
+    background: -webkit-linear-gradient(to right, #546d6d, $main-color);
+    background: linear-gradient(to right, #546d6d, $main-color);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -44,9 +45,9 @@ body {
     box-shadow: 0 0 10px #555;
 
     header {
-        background: #4ECDC4;
-        background: -webkit-linear-gradient(to left, #7ea1a1, #4ECDC4);
-        background: linear-gradient(to left, #7ea1a1, #4ECDC4);
+        background: $main-color;
+        background: -webkit-linear-gradient(to left, #7ea1a1, $main-color);
+        background: linear-gradient(to left, #7ea1a1, $main-color);
         color: white;
         border-radius: 14px;
         padding: 10px;
@@ -72,9 +73,9 @@ body {
             display: block;
             margin: 0 auto;
             background-color: transparent;
-            border: 2px solid #4ECDC4;
+            border: 2px solid $main-color;
             text-transform: uppercase;
-            color: #4ECDC4;
+            color: $main-color;
             font-size: 0.7rem;
             padding: 6px 8px;
             border-radius: 14px;
@@ -85,7 +86,7 @@ body {
         }
 
         button:hover {
-            background-color: #4ECDC4;
+            background-color: $main-color;
             color: white;
         }
 
@@ -101,7 +102,7 @@ body {
             }
 
             i {
-                color: #4ECDC4;
+                color: $main-color;
             }
         }
 
@@ -127,12 +128,14 @@ body {
     }
 
     .quiz-box {
+        display: none;
+
         .quiz {
             padding: 20px;
 
             .question {
                 span {
-                    color: #4ECDC4;
+                    color: $main-color;
                 }
 
                 h2 {
@@ -206,9 +209,9 @@ body {
                     display: block;
                     margin: 0 auto;
                     background-color: transparent;
-                    border: 2px solid #4ECDC4;
+                    border: 2px solid $main-color;
                     text-transform: uppercase;
-                    color: #4ECDC4;
+                    color: $main-color;
                     font-size: 0.7rem;
                     padding: 6px 8px;
                     border-radius: 14px;
@@ -219,7 +222,7 @@ body {
                 }
 
                 button:hover {
-                    background-color: #4ECDC4;
+                    background-color: $main-color;
                     color: white;
                 }
             }
@@ -227,14 +230,16 @@ body {
     }
 
     .result-box {
+        display: none;
+
         .result {
             padding: 10px;
 
             .info {
                 margin-bottom: 20px;
-                background: #4ECDC4;
-                background: -webkit-linear-gradient(to left, #7ea1a1, #4ECDC4);
-                background: linear-gradient(to left, #7ea1a1, #4ECDC4);
+                background: $main-color;
+                background: -webkit-linear-gradient(to left, #7ea1a1, $main-color);
+                background: linear-gradient(to left, #7ea1a1, $main-color);
                 color: white;
                 border-radius: 14px;
                 padding: 10px;
