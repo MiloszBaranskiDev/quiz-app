@@ -161,6 +161,7 @@ body {
 }
 
 .app .quiz-box .quiz .answers .answer {
+  text-align: center;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
