@@ -114,7 +114,6 @@ function showResult() {
   for (let i = 0; i <= userAnswers.length; i++) {
     showAnswers.appendChild(userAnswers[i]);
   }
-  console.log(userAnswers);
 }
 
 function setShadow() {
