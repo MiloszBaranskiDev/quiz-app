@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/72a3010774.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="/fav.png" type="image/x-icon" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <div class="app">
+    <header>
+      <h1>Quiz Web Development</h1>
+      <p class="description">
+        Sprawdź swoją wiedzę z programowania stron internetowych.
+      </p>
+      <div class="underline"></div>
+    </header>
+    <div class="start-box">
+      <div class="info">
+        <p>
+          <i class="fas fa-angle-right"></i> Po rozwiązaniu możesz sprawdzić
+          <br />swoje odpowiedzi.
+        </p>
+        <p><i class="fas fa-angle-right"></i> Pasuje jedna odpowiedź.</p>
+        <p><i class="fas fa-angle-right"></i> Quiz ma łącznie 10 pytań.</p>
+      </div>
+      <form>
+        <input type="text" placeholder="Twoje imię" maxlength="20" />
+      </form>
+      <button class="start">Zacznij</button>
+    </div>
+    <div class="quiz-box">
+      <div class="quiz">
+        <div class="question">
+        </div>
+        <div class="answers">
+          <div class="answer answer-first">
+            <span class="answer_text" id="a_text"></span>
+          </div>
+          <div class="answer answer-second">
+            <span class="answer_text" id="b_text"></span>
+          </div>
+          <div class="answer answer-third">
+            <span class="answer_text" id="c_text"></span>
+          </div>
+          <div class="answer answer-fourth">
+            <span class="answer_text" id="d_text"></span>
+          </div>
+        </div>
+        <div class="button-box">
+          <button id="next-btn">Kolejne</button>
+        </div>
+      </div>
+    </div>
+    <div class="result-box">
+      <div class="result">
+        <div class="info">
+          <p id="info-text"></p>
+        </div>
+        <div class="show-answers">
+          <p>Twoje odpowiedzi:</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/main.js"></script>
+</body>
+
+</html>
