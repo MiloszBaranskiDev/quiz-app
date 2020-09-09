@@ -12,9 +12,9 @@
 body {
   font-family: 'Raleway', sans-serif;
   color: #333;
-  background: #4ECDC4;
-  background: -webkit-gradient(linear, left top, right top, from(#546d6d), to(#4ECDC4));
-  background: linear-gradient(to right, #546d6d, #4ECDC4);
+  background: #4ecdc4;
+  background: -webkit-gradient(linear, left top, right top, from(#546d6d), to(#4ecdc4));
+  background: linear-gradient(to right, #546d6d, #4ecdc4);
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,9 +52,9 @@ body {
 }
 
 .app header {
-  background: #4ECDC4;
-  background: -webkit-gradient(linear, right top, left top, from(#7ea1a1), to(#4ECDC4));
-  background: linear-gradient(to left, #7ea1a1, #4ECDC4);
+  background: #4ecdc4;
+  background: -webkit-gradient(linear, right top, left top, from(#7ea1a1), to(#4ecdc4));
+  background: linear-gradient(to left, #7ea1a1, #4ecdc4);
   color: white;
   border-radius: 14px;
   padding: 10px;
@@ -77,21 +77,21 @@ body {
   display: block;
   margin: 0 auto;
   background-color: transparent;
-  border: 2px solid #4ECDC4;
+  border: 2px solid #4ecdc4;
   text-transform: uppercase;
-  color: #4ECDC4;
+  color: #4ecdc4;
   font-size: 0.7rem;
   padding: 6px 8px;
   border-radius: 14px;
   font-weight: 800;
   letter-spacing: 1px;
-  -webkit-transition: color .3s, background-color .3s;
-  transition: color .3s, background-color .3s;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
   cursor: pointer;
 }
 
 .app .start-box button:hover {
-  background-color: #4ECDC4;
+  background-color: #4ecdc4;
   color: white;
 }
 
@@ -107,7 +107,7 @@ body {
 }
 
 .app .start-box .info i {
-  color: #4ECDC4;
+  color: #4ecdc4;
 }
 
 .app .start-box form {
@@ -124,10 +124,10 @@ body {
   background-color: #fff;
   padding: 8px 8px;
   width: 60%;
-  -webkit-transition: -webkit-box-shadow .3s;
-  transition: -webkit-box-shadow .3s;
-  transition: box-shadow .3s;
-  transition: box-shadow .3s, -webkit-box-shadow .3s;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
 }
 
 .app .start-box form input:focus {
@@ -135,12 +135,16 @@ body {
           box-shadow: 0 0 10px silver;
 }
 
+.app .quiz-box {
+  display: none;
+}
+
 .app .quiz-box .quiz {
   padding: 20px;
 }
 
 .app .quiz-box .quiz .question span {
-  color: #4ECDC4;
+  color: #4ecdc4;
 }
 
 .app .quiz-box .quiz .question h2 {
@@ -179,12 +183,12 @@ body {
   height: 80px;
   color: white;
   text-shadow: 0 0 5px #333;
-  -webkit-transition: background-color .4s;
-  transition: background-color .4s;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
 }
 
 .app .quiz-box .quiz .answers .answer span {
-  font-size: 0.6rem;
+  font-size: 0.55rem;
 }
 
 .app .quiz-box .quiz .answers .answer-first {
@@ -227,22 +231,26 @@ body {
   display: block;
   margin: 0 auto;
   background-color: transparent;
-  border: 2px solid #4ECDC4;
+  border: 2px solid #4ecdc4;
   text-transform: uppercase;
-  color: #4ECDC4;
+  color: #4ecdc4;
   font-size: 0.7rem;
   padding: 6px 8px;
   border-radius: 14px;
   font-weight: 800;
   letter-spacing: 1px;
-  -webkit-transition: color .3s, background-color .3s;
-  transition: color .3s, background-color .3s;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
   cursor: pointer;
 }
 
 .app .quiz-box .quiz .button-box button:hover {
-  background-color: #4ECDC4;
+  background-color: #4ecdc4;
   color: white;
+}
+
+.app .result-box {
+  display: none;
 }
 
 .app .result-box .result {
@@ -251,9 +259,9 @@ body {
 
 .app .result-box .result .info {
   margin-bottom: 20px;
-  background: #4ECDC4;
-  background: -webkit-gradient(linear, right top, left top, from(#7ea1a1), to(#4ECDC4));
-  background: linear-gradient(to left, #7ea1a1, #4ECDC4);
+  background: #4ecdc4;
+  background: -webkit-gradient(linear, right top, left top, from(#7ea1a1), to(#4ecdc4));
+  background: linear-gradient(to left, #7ea1a1, #4ecdc4);
   color: white;
   border-radius: 14px;
   padding: 10px;
@@ -303,7 +311,7 @@ body {
     height: 90px;
   }
   .app .quiz-box .quiz .answers .answer span {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
   .app .quiz-box .quiz .button-box {
     margin-top: 40px;
@@ -365,7 +373,7 @@ body {
     height: 100px;
   }
   .app .quiz-box .quiz .answers .answer span {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
   }
   .app .quiz-box .quiz .button-box {
     margin-top: 50px;
@@ -418,7 +426,7 @@ body {
     height: 125px;
   }
   .app .quiz-box .quiz .answers .answer span {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
   }
   .app .quiz-box .quiz .button-box {
     margin-top: 60px;
