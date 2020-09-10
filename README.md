@@ -8,7 +8,6 @@ Reading relevant data from object and display them, saving user answers and scor
 
 * HTML
 * CSS/SASS
-* BOOTSTRAP
 * JAVASCRIPT
 
 ## Preview
