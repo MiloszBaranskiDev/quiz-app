@@ -8,5 +8,5 @@
 
 ## Preview
 
-Live here: https://github.com
+Live here: https://miloszbaranskidev.github.io/quiz-app/
 
